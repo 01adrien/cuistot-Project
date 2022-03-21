@@ -51,8 +51,8 @@ section {
   cursor: auto;
 }
 svg {
-  width: 120%;
-  margin: 10% -5%;
+  width: 100%;
+  margin-top: 10%;
   align-self: center;
 }
 
