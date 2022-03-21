@@ -14,12 +14,17 @@ body {
 
 /* France map */
 
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .cuistotsimg > img {
-  /* modified here */
-  display: block;
-  align-self: center;
   width: 50%;
-  margin: auto;
+  margin-left: 25%;
+  margin-top: 10%;
+  align-self: center;
 }
 
 .map--image .land {
@@ -45,23 +50,15 @@ body {
   transition: fill 0.3s;
   cursor: auto;
 }
-
-.map--image {
-  display: block;
-  justify-content: center;
-}
-
 svg {
-  position: absolute;
-  margin-top: 10%; /* modified here */
+  width: 120%;
+  margin: 10% -5%;
+  align-self: center;
 }
 
 /* Popup */
 
 .popup {
-  display: block;
-  justify-content: center;
-  margin: 25% 15% auto;
   padding: 0 1rem;
   min-width: fit-content;
   border: solid 0.1rem
@@ -74,7 +71,6 @@ svg {
     rgba(236, 236, 236, 0.7),
     rgba(230, 219, 219, 0.7)
   );
-  position: absolute;
 }
 
 .popup:hover {
@@ -126,8 +122,8 @@ input[type="submit"]:hover {
 .info {
   display: none;
   justify-content: center;
-  margin: 105% 15% auto;
   padding: 0 1rem;
+  margin-bottom: 10%;
   min-width: fit-content;
   border: solid 0.1rem
     linear-gradient(65deg, rgba(236, 236, 236, 0.5), rgba(255, 205, 205, 0.5));
@@ -139,9 +135,7 @@ input[type="submit"]:hover {
     rgba(236, 236, 236, 0.7),
     rgba(230, 219, 219, 0.7)
   );
-  position: absolute;
 }
-
 .info p {
   font-family: var(--font-family);
   color: var(--font-color);
@@ -155,23 +149,15 @@ input[type="submit"]:hover {
   body {
     background-image: url("./desktop-background.jpg");
   }
-  svg {
-    width: 50%;
-    display: block;
-    margin: auto;
-    top: 70%;
-    bottom: -50%;
-    left: 25%;
-  }
   .cuistotsimg > img {
     width: 30%;
-    margin-top: 4%;
+    margin-left: 35%;
+    margin-top: 10%;
+    align-self: center;
   }
-  .popup {
-    margin: 20% 30%;
-  }
-  .info {
-    margin: 60% 30% auto;
-    justify-content: center;
+  svg {
+    width: 200%;
+    margin: 10% -50%;
+    align-self: center;
   }
 }
