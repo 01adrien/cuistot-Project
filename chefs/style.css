@@ -19,8 +19,14 @@ p {
   font-family: Roboto;
 }
 
+.titre {
+  border: 1px solid pink;
+  padding: 30px;
+  font-size: 30px;
+  font-family: Roboto;
+}
 p {
-  background-color: beige;
+  background-color: pink;
   padding-bottom: 50px;
   border-right: 20px solid grey;
   margin: 50px;
