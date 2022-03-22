@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="nav-style.css" />
+    <link rel="stylesheet" href="../nav-footer/nav-style.css" />
+    <link rel="stylesheet" href="caroussel.css">
     <title>recette de la bouillabaisse</title>
   </head>
   <body>
     <header>
       <nav class="navbar">
-        <img class="logo" src="img/logo4.png" />
+        <img class="logo" src="../img/toque-c-est-moi-le-chef.png" />
         <a href="#" class="toggle-button">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -20,18 +21,39 @@
         </a>
         <div class="navbar-links">
           <ul>
-            <li><a class="active"href="../navAndHomepage/homepage.html">Accueil</a></li>
+            <li><a class="active" href="../index.html">Accueil</a></li>
             <li><a href="../chefs/chefs.html">L'equipe des chefs</a></li>
-            <li><a href="recette-bouillabaisse.html">Les recettes</a></li>
-            <li><a href="../form/index.html">Contact</a></li>
+            <li><a href="../recette/recette-boeuf-bourguignon.html">Les recettes</a></li>
+            <li><a href="../form/form.html">Contact</a></li>
           </ul>
         </div>
       </nav>
     </header>
-    <div class="head-container">
-      <div class="point"></div>
-      <img class="main-img" src="img/bouillabaiss.jpeg" alt="choucroute">
-      <div class="point"></div>
+    <div class="caroussel">
+      <div class="slideshow-container">
+	<div class="mySlides fade">
+	  <img src="../img/bouillabaisse-carroussel1.jpeg">
+	</div>
+	<div class="mySlides fade">
+	  <img  src="../img/bouillabaisse-carroussel2.jpg">
+	</div>
+	<div class="mySlides fade">
+	  <img src="../img/bouillabaisse-carroussel3.jpg">
+	</div>
+	<div class="mySlides fade">
+	  <img src="../img/bouillabaisse-carroussel4.jpg">
+	</div>
+	<a class="prev" >&#10094;</a>
+	<a class="next">&#10095;</a>
+      </div>
+      <br>
+      <br>
+      <div class="dot-btn">
+	<span class="dot" onclick="currentSlide(1)"></span>
+	<span class="dot" onclick="currentSlide(2)"></span>
+	<span class="dot" onclick="currentSlide(3)"></span>
+	<span class="dot" onclick="currentSlide(4)"></span>
+      </div>
     </div>
     <h1> La bouillabaisse </h1>
     <div class="recipe-infos">
@@ -47,12 +69,12 @@
       </ul>
       <div class="all-infos">
   	<div class="infos1">
-  	  <img class="timer" src="img/lhorloge.png" alt="timer">
+  	  <img class="timer" src="../img/lhorloge.png" alt="timer">
   	  <span>&nbsp&nbsp1 H</span>
   	</div>
   	<div class="infos2">
-  	  <img class="difficulty" src="img/casserole.png" alt="icon-difficulte" />
-  	  <img class="difficulty" src="img/casserole.png" alt="icon-difficulte" />
+  	  <img class="difficulty" src="../img/casserole.png" alt="icon-difficulte" />
+  	  <img class="difficulty" src="../img/casserole.png" alt="icon-difficulte" />
   	  <span>&nbsp&nbsp&nbsp&nbspmoyen</span>
   	</div>
   	<div class="quantity">
@@ -65,7 +87,7 @@
     <div class="main-container">
       <div class="progress-bar"></div>
       <div class="block one">
-  	<img class="first-img"src="img/fenouil.jpg" alt="fenouil">
+  	<img class="first-img"src="../img/fenouil.jpg" alt="fenouil">
 	<div class="space"></div>
   	<div class="etape">
   	  <h3>5 - 10 min</h3>
@@ -80,7 +102,7 @@
   	</div>
       </div>
       <div class="block two">
-  	<img class="second-img" src="img/moule.jpg" alt="moule">
+  	<img class="second-img" src="../img/moule.jpg" alt="moule">
 	<div class="space"></div>
   	<div class="etape">
   	  <h3>15 - 20 min</h3>
@@ -95,19 +117,19 @@
   	</div>
       </div>
       <div class="block three">
-  	<img class="third-img" src="img/baies.jpg" alt="genievre">
+  	<img class="third-img" src="../img/baies.jpg" alt="genievre">
 	<div class="space"></div>
-  	  <div class="etape">
-  	    <h3>5 - 10 min</h3>
-  	    <p>
-  	      Nullam eu ante vel est convallis dignissim.
-  	      Fusce suscipit, wisi nec facilisis facilisis.
-  	      Nullam eu ante vel est convallis dignissim.
-  	      Fusce suscipit, wisi nec facilisis facilisis.
-  	      Nullam eu ante vel est convallis dignissim.
-  	      Fusce suscipit, wisi nec facilisis facilisis.
-  	    </p>
-  	  </div>
+  	<div class="etape">
+  	  <h3>5 - 10 min</h3>
+  	  <p>
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	  </p>
+  	</div>
       </div>
       <div class="block four">
   	<div class="etape">
@@ -122,7 +144,7 @@
   	  </p>
   	</div>
 	<div class="space"></div>
-  	<img class="fourth-img" src="img/poisson-bouillabaisse.jpeg" alt="poisson">
+  	<img class="fourth-img" src="../img/poisson-bouillabaisse.jpeg" alt="poisson">
       </div>
       <div class="block five">
   	<div class="etape">
@@ -137,7 +159,7 @@
   	  </p>
   	</div>
 	<div class="space"></div>
-  	<img class="fifth-img" src="img/laurier.jpg" alt="laurier">
+  	<img class="fifth-img" src="../img/laurier.jpg" alt="laurier">
       </div>
       <div class="block six">
   	<div class="etape">
@@ -152,7 +174,7 @@
   	  </p>
   	</div>
 	<div class="space"></div>
-  	<img class="sixth-img" src="img/epices.jpeg" alt="epice">
+  	<img class="sixth-img" src="../img/epices.jpeg" alt="epice">
       </div>
     </div>
     <footer>
@@ -160,7 +182,8 @@
         <p>LES CUISTOS © 2022 Tous droits réservés.</p>
       </div>
     </footer>
+    <script type="text/javascript" src="caroussel.js"></script>
     <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript" src="nav-script.js"></script>
+    <script type="text/javascript" src="../nav-footer/nav-script.js"></script>
   </body>
 </html>
