@@ -33,6 +33,7 @@ body {
 }
 .navbar li:hover {
   background-color: rgb(225, 233, 233);
+  border-radius: 25px;
 }
 
 .navbar li a {
