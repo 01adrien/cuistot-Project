@@ -108,7 +108,7 @@ input[type="submit"] {
   margin: auto;
   margin-bottom: 0.6rem;
   margin-top: 0.6rem;
-  padding: 3px;
+  padding: 15px;
   border-radius: 150px;
   font-size: 1.5rem;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
@@ -116,8 +116,8 @@ input[type="submit"] {
   transition: 0.3s ease;
 }
 input[type="submit"]:hover {
-  filter: brightness(105%);
-  transform: translateX(2px);
+  filter: brightness(110%);
+  transform: translateX(5px);
 }
 
 .info {
