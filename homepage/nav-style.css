@@ -66,15 +66,13 @@ body {
 }
 
 footer {
-  position: absolute;
-  position: fixed;
-  bottom: 0;
   width: 100%;
   text-align: center;
 }
 
 .footer-container > p {
   text-align: center;
+  font-family: var(--font-family);
 }
 
 @media screen and (max-width: 500px) {
