@@ -33,6 +33,7 @@ body {
 }
 .navbar li:hover {
   background-color: rgb(225, 233, 233);
+  border-radius: 25px;
 }
 
 .navbar li a {
@@ -65,15 +66,15 @@ body {
 }
 
 footer {
-  position: absolute;
-  position: fixed;
-  bottom: 0;
   width: 100%;
   text-align: center;
 }
 
 .footer-container > p {
+  font-size: 0.7em;
+  color: #f1a896;
   text-align: center;
+  font-family: var(--font-family);
 }
 
 @media screen and (max-width: 500px) {

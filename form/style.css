@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url("/form/Img_form/background.jpg");
+  background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;

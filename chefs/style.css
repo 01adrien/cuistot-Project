@@ -1,5 +1,5 @@
 body {
-  background-image: url("image_chefs/background.jpg");
+  background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -32,10 +32,6 @@ p {
   border-right: 20px solid grey;
   margin: 50px;
   padding: 20px;
-}
-
-hr {
-  width: 50%;
 }
 
 .nos-chefs img {

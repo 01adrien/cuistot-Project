@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url("./background.jpg");
+  background-image: url("img/background.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -148,7 +148,7 @@ input[type="submit"]:hover {
 
 @media screen and (min-width: 1100px) {
   body {
-    background-image: url("./desktop-background.jpg");
+    background-image: url("img/desktop-background.jpg");
   }
   .cuistotsimg > img {
     width: 30%;

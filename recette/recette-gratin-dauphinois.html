@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="nav-style.css" />
+    <link rel="stylesheet" href="../nav-footer/nav-style.css" />
+    <link rel="stylesheet" href="caroussel.css">
     <title>recette du gratin dauphinois</title>
   </head>
   <body>
     <header>
       <nav class="navbar">
-        <img class="logo" src="img/toque3.png" />
+        <img class="logo" src="../img/toque-c-est-moi-le-chef.png" />
         <a href="#" class="toggle-button">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -20,149 +21,168 @@
         </a>
         <div class="navbar-links">
           <ul>
-            <li><a class="active"
-		   href="../navAndHomepage/homepage.html">Accueil</a></li>
+            <li><a class="active" href="../index.html">Accueil</a></li>
             <li><a href="../chefs/chefs.html">L'equipe des chefs</a></li>
-            <li><a href="../recette/recette-bouillabaisse.html">Les recettes</a></li>
-            <li><a href="../form/index.html">Contact</a></li>
+            <li><a href="../recette/recette-boeuf-bourguignon.html">Les recettes</a></li>
+            <li><a href="../form/form.html">Contact</a></li>
           </ul>
         </div>
       </nav>
     </header>
-    <section class="header">
-      <div class="head-container">
-	<div class="point"></div>
-	<img class="main-img" src="img/gratin.jpg" alt="gratin dauphinois">
-	<div class="point"></div>
+    <div class="caroussel">
+      <div class="slideshow-container">
+	<div class="mySlides">
+	  <img src="../img/gratin1.jpg">
+	</div>
+	<div class="mySlides">
+	  <img  src="../img/gratin2.jpg">
+	</div>
+	<div class="mySlides">
+	  <img src="../img/gratin3.jpg">
+	</div>
+	<div class="mySlides">
+	  <img src="../img/gratin4.jpg">
+	</div>
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
-      <h1>Le gratin dauphinois</h1>
-      <div class="recipe-infos">
-	<ul>
-	  <li><span class="qty">0.5</span> kg Pommes de terre</li>
-	  <li><span class="qty">30</span> cl Crème liquide</li>
-	  <li><span class="qty">40</span> cl Lait</li>
-	  <li><span class="qty">1</span> noisette Beurre</li>
-	  <li><span class="qty">1</span> gousse Ail</li>
-	  <li><span class="qty">1</span> pincée Noix de muscade</li>
-	  <li>Sel</li>
-	  <li>Poivre</li>
-	</ul>
-	<div class="all-infos">
-  	  <div class="infos1">
-  	    <img class="timer" src="img/lhorloge.png" alt="timer">
-  	    <span>&nbsp&nbsp40 min</span>
-  	  </div>
-  	  <div class="infos2">
-  	    <img class="difficulty" src="img/casserole.png" alt="icon-difficulte" />
-  	    <span>&nbsp&nbsp&nbsp&nbspfacile</span>
-  	  </div>
-  	  <div class="quantity">
-  	    <button class="increment" id="minus">↓</button>
-	    <span id="people">4</span><span> Pers</span>
-	    <button class="increment" id="plus">↑</button>
-  	  </div>
+      <br>
+      <br>
+      <div class="dot-btn">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+		<span class="dot" onclick="currentSlide(4)"></span>
 	</div>
-      </div>	
-      <div class="main-container">
-	<div class="progress-bar"></div>
-	<div class="block one">
-  	  <img class="first-img"src="img/patate.jpg" alt="patate">
-	  <div class="space"></div>
-  	  <div class="etape">
-  	    <h3>5 - 10 min</h3>
-  	    <p>
-  	      Nullam eu ante vel est convallis dignissim.
-  	      Fusce suscipit, wisi nec facilisis facilisis.
-  	      Nullam eu ante vel est convallis dignissim.
-  	      Fusce suscipit, wisi nec facilisis facilisis.
-  	      Nullam eu ante vel est convallis dignissim.
-  	      Fusce suscipit, wisi nec facilisis facilisis.
-  	    </p>
-  	  </div>
-	</div>
-	<div class="block two">
-  	  <img class="second-img" src="img/lait.jpg" alt="lait">
-	  <div class="space"></div>
-  	  <div class="etape">
-  	    <h3>15 - 20 min</h3>
-  	    <p>
-  	      Nullam eu ante vel est convallis dignissim.
-  	      Fusce suscipit, wisi nec facilisis facilisis.
-  	      Nullam eu ante vel est convallis dignissim.
-  	      Fusce suscipit, wisi nec facilisis facilisis.
-  	      Nullam eu ante vel est convallis dignissim.
-  	      Fusce suscipit, wisi nec facilisis facilisis.
-  	    </p>
-  	  </div>
-	</div>
-	<div class="block three">
-  	  <img class="third-img" src="img/beurre.jpg" alt="beurre">
-	  <div class="space"></div>
-  	  <div class="etape">
-  	    <h3>5 - 10 min</h3>
-  	    <p>
-  	      Nullam eu ante vel est convallis dignissim.
-  	      Fusce suscipit, wisi nec facilisis facilisis.
-  	      Nullam eu ante vel est convallis dignissim.
-  	      Fusce suscipit, wisi nec facilisis facilisis.
-  	      Nullam eu ante vel est convallis dignissim.
-  	      Fusce suscipit, wisi nec facilisis facilisis.
-  	    </p>
-  	  </div>
-	</div>
-	<div class="block four">
-  	  <div class="etape">
-  	    <h3>0 - 5 min</h3>
-  	    <p>
-  	      Nullam eu ante vel est convallis dignissim.
-  	      Nullam eu ante vel est convallis dignissim.
-  	      Fusce suscipit, wisi nec facilisis facilisis.
-  	      Nullam eu ante vel est convallis dignissim.
-  	      Fusce suscipit, wisi nec facilisis facilisis.
-  	      Fusce suscipit, wisi nec facilisis facilisis.
-  	    </p>
-  	  </div>
-	  <div class="space"></div>
-  	  <img class="fourth-img" src="img/ail.jpg" alt="ail">
-	</div>
-	<div class="block five">
-  	  <div class="etape">
-  	    <h3>15 - 20 min</h3>
-  	    <p>
-  	      Nullam eu ante vel est convallis dignissim.
-  	      Nullam eu ante vel est convallis dignissim.
-  	      Fusce suscipit, wisi nec facilisis facilisis.
-  	      Nullam eu ante vel est convallis dignissim.
-  	      Fusce suscipit, wisi nec facilisis facilisis.
-  	      Fusce suscipit, wisi nec facilisis facilisis.
-  	    </p>
-  	  </div>
-	  <div class="space"></div>
-  	  <img class="fifth-img" src="img/muscade.jpeg" alt="muscade">
-	</div>
-	<div class="block six">
-  	  <div class="etape">
-  	    <h3>10 - 15 min</h3>
-  	    <p>
-  	      Nullam eu ante vel est convallis dignissim.
-  	      Nullam eu ante vel est convallis dignissim.
-  	      Fusce suscipit, wisi nec facilisis facilisis.
-  	      Nullam eu ante vel est convallis dignissim.
-  	      Fusce suscipit, wisi nec facilisis facilisis.
-  	      Fusce suscipit, wisi nec facilisis facilisis.
-  	    </p>
-  	  </div>
-	  <div class="space"></div>
-  	  <img class="sixth-img" src="img/gratin-final.jpeg" alt="gratin">
-	</div>
+    </div>
+    <h1>Le gratin dauphinois</h1>
+    <div class="recipe-infos">
+      <ul>
+	<li><span class="qty">0.5</span> kg Pommes de terre</li>
+	<li><span class="qty">30</span> cl Crème liquide</li>
+	<li><span class="qty">40</span> cl Lait</li>
+	<li><span class="qty">1</span> noisette Beurre</li>
+	<li><span class="qty">1</span> gousse Ail</li>
+	<li><span class="qty">1</span> pincée Noix de muscade</li>
+	<li>Sel</li>
+	<li>Poivre</li>
+      </ul>
+      <div class="all-infos">
+  	<div class="infos1">
+  	  <img class="timer" src="../img/lhorloge.png" alt="timer">
+  	  <span>&nbsp&nbsp40 min</span>
+  	</div>
+  	<div class="infos2">
+  	  <img class="difficulty" src="../img/casserole.png" alt="icon-difficulte" />
+  	  <span>&nbsp&nbsp&nbsp&nbspfacile</span>
+  	</div>
+  	<div class="quantity">
+  	  <button class="increment" id="minus">↓</button>
+	  <span id="people">4</span><span> Pers</span>
+	  <button class="increment" id="plus">↑</button>
+  	</div>
       </div>
-    </section>
+    </div>	
+    <div class="main-container">
+      <div class="progress-bar"></div>
+      <div class="block one">
+  	<img class="first-img"src="../img/patate.jpg" alt="patate">
+	<div class="space"></div>
+  	<div class="etape">
+  	  <h3>5 - 10 min</h3>
+  	  <p>
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	  </p>
+  	</div>
+      </div>
+      <div class="block two">
+  	<img class="second-img" src="../img/lait.jpg" alt="lait">
+	<div class="space"></div>
+  	<div class="etape">
+  	  <h3>15 - 20 min</h3>
+  	  <p>
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	  </p>
+  	</div>
+      </div>
+      <div class="block three">
+  	<img class="third-img" src="../img/beurre.jpg" alt="beurre">
+	<div class="space"></div>
+  	<div class="etape">
+  	  <h3>5 - 10 min</h3>
+  	  <p>
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	  </p>
+  	</div>
+      </div>
+      <div class="block four">
+  	<div class="etape">
+  	  <h3>0 - 5 min</h3>
+  	  <p>
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	  </p>
+  	</div>
+	<div class="space"></div>
+  	<img class="fourth-img" src="../img/ail.jpg" alt="ail">
+      </div>
+      <div class="block five">
+  	<div class="etape">
+  	  <h3>15 - 20 min</h3>
+  	  <p>
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	  </p>
+  	</div>
+	<div class="space"></div>
+  	<img class="fifth-img" src="../img/muscade.jpeg" alt="muscade">
+      </div>
+      <div class="block six">
+  	<div class="etape">
+  	  <h3>10 - 15 min</h3>
+  	  <p>
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	  </p>
+  	</div>
+	<div class="space"></div>
+  	<img class="sixth-img" src="../img/gratin-final.jpeg" alt="gratin">
+      </div>
+    </div>
     <footer>
       <div class="footer-container">
         <p>LES CUISTOS © 2022 Tous droits réservés.</p>
       </div>
     </footer>
+    <script type="text/javascript" src="caroussel.js"></script>
     <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript" src="nav-script.js"></script>
+    <script type="text/javascript" src="../nav-footer/nav-script.js"></script>
   </body>
-  </html>
+</html>
