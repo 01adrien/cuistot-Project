@@ -1,2 +1,2 @@
 # cuistot-Project
-Projet 1
+Projet 1 Wild Code School
